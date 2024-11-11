@@ -11,7 +11,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
-        long actual = service.CalculateSumAllSales(sales);
+        long actual = service.сalculateSumAllSales(sales);
         Assertions.assertEquals(expected, actual);
     }
 
@@ -21,7 +21,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
-        long actual = service.CalculateAverageSales(sales);
+        long actual = service.сalculateAverageSales(sales);
         Assertions.assertEquals(expected, actual);
     }
 

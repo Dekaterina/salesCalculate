@@ -2,7 +2,7 @@ package ru.netology.javaqa.javaqamvn.stats;
 
 public class StatsService {
 
-    public long CalculateSumAllSales(long[] sales) {
+    public long сalculateSumAllSales(long[] sales) {
         long sum = 0;
         for (int i = 0; i < sales.length; i++) {
             sum = sum + sales[i];
@@ -10,8 +10,8 @@ public class StatsService {
         return sum;
     }
 
-    public long CalculateAverageSales(long[] sales) {
-        return CalculateSumAllSales(sales) / sales.length;
+    public long сalculateAverageSales(long[] sales) {
+        return сalculateSumAllSales(sales) / sales.length;
     }
 
     public int getMonthMaxSales(long[] sales) {
@@ -36,7 +36,7 @@ public class StatsService {
 
     public int countMontsBellowAverageSales(long[] sales) {
         int count = 0;
-        long averageSales = CalculateAverageSales(sales);
+        long averageSales = сalculateAverageSales(sales);
         for (long sale : sales) {
             if (sale < averageSales) {
                 count++;
@@ -47,7 +47,7 @@ public class StatsService {
 
     public int countMontsAboveAverageSales(long[] sales) {
         int count = 0;
-        long averageSales = CalculateAverageSales(sales);
+        long averageSales = сalculateAverageSales(sales);
         for (long sale : sales) {
             if (sale > averageSales) {
                 count++;
