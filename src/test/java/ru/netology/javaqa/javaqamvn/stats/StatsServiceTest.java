@@ -34,6 +34,7 @@ public class StatsServiceTest {
         long actual = service.getMonthMaxSales(sales);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testMonthMinSales() {
         StatsService service = new StatsService();
@@ -43,6 +44,7 @@ public class StatsServiceTest {
         long actual = service.getMonthMinSales(sales);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testCountMonthBellowAverageSales() {
         StatsService service = new StatsService();
@@ -52,6 +54,7 @@ public class StatsServiceTest {
         long actual = service.countMontsBellowAverageSales(sales);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testCountMonthAboveAverageSales() {
         StatsService service = new StatsService();
